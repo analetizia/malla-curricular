@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Comunicación</title>
+  <style>
+    body {
+      background: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titulo-ano {
+      color: #980099;
+      text-align: center;
+      margin-bottom: 28px;
+      font-size: 2.1rem;
+      letter-spacing: 1px;
+    }
+    .bloque-ciclo {
+      margin-bottom: 30px;
+      width: 370px;
+    }
+    .titulo-ciclo {
+      color: #980099;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    .caja-semestre {
+      border-radius: 16px;
+      padding: 16px 18px 16px 18px;
+      box-sizing: border-box;
+      border: 2px solid #d1a9e7;
+      margin-bottom: 12px;
+    }
+    /* Colores alternativos para los ciclos */
+    .semestre-1  { background: #ede2fa; }
+    .semestre-2  { background: #f6e0ee; }
+    .semestre-3  { background: #e0f6ee; }
+    .semestre-4  { background: #fae2ea; }
+    .semestre-5  { background: #e2f0fa; }
+    .semestre-6  { background: #f7f7d1; }
+    .semestre-7  { background: #eae2fa; }
+    .semestre-8  { background: #f2e0f6; }
+    .semestre-9  { background: #e0f6f3; }
+    .semestre-10 { background: #fae2e9; }
+
+    .cursos {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .curso {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left;
+      background: #fff;
+      color: #980099;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s, color 0.15s, opacity 0.15s;
+    }
+    .curso.completado {
+      text-decoration: line-through;
+      color: #b7adb7;
+      opacity: 0.6;
+      background: #f3f0f3;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="titulo-ano">Malla Curricular</h1>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">1° Ciclo</h2>
+    <div class="caja-semestre semestre-1">
+      <div class="cursos">
+        <div class="curso">Desarrollo Humano</div>
+        <div class="curso">English I</div>
+        <div class="curso">Fundamentos de Matemática</div>
+        <div class="curso">Introducción a las Comunicaciones</div>
+        <div class="curso">Lenguaje I</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">2° Ciclo</h2>
+    <div class="caja-semestre semestre-2">
+      <div class="cursos">
+        <div class="curso">Administración para los Negocios</div>
+        <div class="curso">English II</div>
+        <div class="curso">Estadística General</div>
+        <div class="curso">Lenguaje II</div>
+        <div class="curso">Taller de Comunicación Visual</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">3° Ciclo</h2>
+    <div class="caja-semestre semestre-3">
+      <div class="cursos">
+        <div class="curso">Comunicación Escrita I</div>
+        <div class="curso">English III</div>
+        <div class="curso">Historia de la Comunicación</div>
+        <div class="curso">Marketing</div>
+        <div class="curso">Metodología de la Investigación</div>
+        <div class="curso">Realidad Nacional y Globalización</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">4° Ciclo</h2>
+    <div class="caja-semestre semestre-4">
+      <div class="cursos">
+        <div class="curso">Comunicación Escrita II</div>
+        <div class="curso">English IV</div>
+        <div class="curso">Principios de Economía</div>
+        <div class="curso">Sociedad, Estado y Empresa</div>
+        <div class="curso">Teoría de la Comunicación</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">5° Ciclo</h2>
+    <div class="caja-semestre semestre-5">
+      <div class="cursos">
+        <div class="curso">English V</div>
+        <div class="curso">Ética y Ciudadanía</div>
+        <div class="curso">Fotografía</div>
+        <div class="curso">Fundamentos de las Finanzas</div>
+        <div class="curso">Fundamentos del Periodismo</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">6° Ciclo</h2>
+    <div class="caja-semestre semestre-6">
+      <div class="cursos">
+        <div class="curso">Comunicación Audiovisual</div>
+        <div class="curso">Comunicación Digital</div>
+        <div class="curso">Comunicación Empresarial</div>
+        <div class="curso">English VI: RREL</div>
+        <div class="curso">Fundamentos de la Publicidad</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">7° Ciclo</h2>
+    <div class="caja-semestre semestre-7">
+      <div class="cursos">
+        <div class="curso">Comunicación Gráfica</div>
+        <div class="curso">Comunicación Intercultural</div>
+        <div class="curso">Psicología de la Comunicación</div>
+        <div class="curso">Electivo 1</div>
+        <div class="curso">Electivo 2</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">8° Ciclo</h2>
+    <div class="caja-semestre semestre-8">
+      <div class="cursos">
+        <div class="curso">Investigación de Públicos</div>
+        <div class="curso">Sociología de la Comunicación</div>
+        <div class="curso">Taller de Radio</div>
+        <div class="curso">Electivo 3</div>
+        <div class="curso">Electivo 4</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">9° Ciclo</h2>
+    <div class="caja-semestre semestre-9">
+      <div class="cursos">
+        <div class="curso">Comunicación y Globalización</div>
+        <div class="curso">Investigación en Comunicación I</div>
+        <div class="curso">Semiótica</div>
+        <div class="curso">Electivo 5</div>
+        <div class="curso">Electivo 6</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloque-ciclo">
+    <h2 class="titulo-ciclo">10° Ciclo</h2>
+    <div class="caja-semestre semestre-10">
+      <div class="cursos">
+        <div class="curso">Comunicación Política</div>
+        <div class="curso">Ética y Comunicación</div>
+        <div class="curso">Investigación en Comunicación II</div>
+        <div class="curso">Electivo 7</div>
+        <div class="curso">Electivo 8</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.curso').forEach(function(curso) {
+      curso.addEventListener('click', function() {
+        this.classList.toggle('completado');
+      });
+    });
+  </script>
+</body>
+</html>
