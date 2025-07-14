@@ -25,15 +25,13 @@ function mostrarDetalle(cursoID) {
   const modal = document.getElementById("detalleCurso");
   const titulo = document.getElementById("tituloCurso");
   const descripcion = document.getElementById("descripcionCurso");
-
   const boton = document.getElementById(cursoID);
-  
-  // Mostrar contenido
+
   titulo.textContent = cursos[cursoID].titulo;
   descripcion.textContent = cursos[cursoID].descripcion;
   modal.classList.remove("oculto");
 
-  // Marcar como completado (rayado) si ya fue clickeado
+  // Toggle de tachado
   boton.classList.toggle("tachado");
 }
 
