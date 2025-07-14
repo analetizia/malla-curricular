@@ -1,11 +1,23 @@
 const cursos = {
   curso1: {
-    titulo: "Redacción Académica",
-    descripcion: "Aprenderás a redactar textos académicos, argumentativos y coherentes."
+    titulo: "Desarrollo Humano",
+    descripcion: "Analiza el desarrollo del ser humano en distintas etapas desde una perspectiva emocional, social y cognitiva."
   },
   curso2: {
-    titulo: "Comunicación Oral",
-    descripcion: "Mejorarás tus habilidades para hablar en público y comunicar ideas con claridad."
+    titulo: "English I",
+    descripcion: "Curso básico de inglés centrado en habilidades comunicativas: comprensión oral, lectura y vocabulario inicial."
+  },
+  curso3: {
+    titulo: "Fundamentos de Matemática",
+    descripcion: "Brinda herramientas esenciales para el análisis lógico y cuantitativo en la vida académica y profesional."
+  },
+  curso4: {
+    titulo: "Introducción a las Comunicaciones",
+    descripcion: "Explora las bases de la comunicación humana, teorías clave y su aplicación en medios actuales."
+  },
+  curso5: {
+    titulo: "Lenguaje I",
+    descripcion: "Desarrolla habilidades de escritura y comprensión lectora con énfasis en textos académicos y literarios."
   }
 };
 
@@ -14,10 +26,15 @@ function mostrarDetalle(cursoID) {
   const titulo = document.getElementById("tituloCurso");
   const descripcion = document.getElementById("descripcionCurso");
 
+  const boton = document.getElementById(cursoID);
+  
+  // Mostrar contenido
   titulo.textContent = cursos[cursoID].titulo;
   descripcion.textContent = cursos[cursoID].descripcion;
-
   modal.classList.remove("oculto");
+
+  // Marcar como completado (rayado) si ya fue clickeado
+  boton.classList.toggle("tachado");
 }
 
 function cerrarModal() {
