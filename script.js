@@ -1,40 +1,32 @@
 const cursos = {
   curso1: {
     titulo: "Desarrollo Humano",
-    descripcion: "Analiza el desarrollo del ser humano en distintas etapas desde una perspectiva emocional, social y cognitiva."
+    descripcion: "Curso orientado al crecimiento personal, social y profesional."
   },
   curso2: {
     titulo: "English I",
-    descripcion: "Curso básico de inglés centrado en habilidades comunicativas: comprensión oral, lectura y vocabulario inicial."
+    descripcion: "Fundamentos de inglés para la comunicación básica."
   },
   curso3: {
     titulo: "Fundamentos de Matemática",
-    descripcion: "Brinda herramientas esenciales para el análisis lógico y cuantitativo en la vida académica y profesional."
+    descripcion: "Conceptos esenciales de matemática para ciencias sociales."
   },
   curso4: {
     titulo: "Introducción a las Comunicaciones",
-    descripcion: "Explora las bases de la comunicación humana, teorías clave y su aplicación en medios actuales."
+    descripcion: "Panorama general sobre las teorías y prácticas comunicativas."
   },
   curso5: {
     titulo: "Lenguaje I",
-    descripcion: "Desarrolla habilidades de escritura y comprensión lectora con énfasis en textos académicos y literarios."
+    descripcion: "Estudio del lenguaje y su importancia en la comunicación."
   }
 };
 
-function mostrarDetalle(cursoID) {
-  const modal = document.getElementById("detalleCurso");
-  const titulo = document.getElementById("tituloCurso");
-  const descripcion = document.getElementById("descripcionCurso");
-  const boton = document.getElementById(cursoID);
-
-  titulo.textContent = cursos[cursoID].titulo;
-  descripcion.textContent = cursos[cursoID].descripcion;
-  modal.classList.remove("oculto");
-
-  // Toggle de tachado
-  boton.classList.toggle("tachado");
+function mostrarDetalle(cursoId) {
+  document.getElementById('tituloCurso').textContent = cursos[cursoId].titulo;
+  document.getElementById('descripcionCurso').textContent = cursos[cursoId].descripcion;
+  document.getElementById('detalleCurso').classList.remove('oculto');
 }
 
 function cerrarModal() {
-  document.getElementById("detalleCurso").classList.add("oculto");
+  document.getElementById('detalleCurso').classList.add('oculto');
 }
