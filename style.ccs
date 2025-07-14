@@ -4,6 +4,10 @@ body {
   padding: 20px;
 }
 
+h1 {
+  color: #2d3436;
+}
+
 .ciclo {
   margin-bottom: 30px;
 }
@@ -16,6 +20,16 @@ button {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0984e3;
+}
+
+button.tachado {
+  text-decoration: line-through;
+  background-color: #b2bec3;
 }
 
 .modal {
@@ -43,4 +57,5 @@ button {
   float: right;
   cursor: pointer;
   font-weight: bold;
+  font-size: 18px;
 }
