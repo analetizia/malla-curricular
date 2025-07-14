@@ -7,14 +7,12 @@
 </head>
 <body>
   <h1>Malla Curricular - Comunicación</h1>
-
-  <div class="ciclo">
-    <h2>1° Ciclo</h2>
-    <button id="curso1" onclick="mostrarDetalle('curso1')">Desarrollo Humano</button>
-    <button id="curso2" onclick="mostrarDetalle('curso2')">English I</button>
-    <button id="curso3" onclick="mostrarDetalle('curso3')">Fundamentos de Matemática</button>
-    <button id="curso4" onclick="mostrarDetalle('curso4')">Introducción a las Comunicaciones</button>
-    <button id="curso5" onclick="mostrarDetalle('curso5')">Lenguaje I</button>
+  <div class="ciclo-grid">
+    <div class="curso-card" id="curso1" onclick="mostrarDetalle('curso1')">Desarrollo Humano</div>
+    <div class="curso-card" id="curso2" onclick="mostrarDetalle('curso2')">English I</div>
+    <div class="curso-card" id="curso3" onclick="mostrarDetalle('curso3')">Fundamentos de Matemática</div>
+    <div class="curso-card" id="curso4" onclick="mostrarDetalle('curso4')">Introducción a las Comunicaciones</div>
+    <div class="curso-card" id="curso5" onclick="mostrarDetalle('curso5')">Lenguaje I</div>
   </div>
 
   <div id="detalleCurso" class="modal oculto">
@@ -24,7 +22,7 @@
       <p id="descripcionCurso"></p>
     </div>
   </div>
-
+  
   <script src="script.js"></script>
 </body>
-</
+</html>
