@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular - Comunicación</h1>
+  
+  <div class="ciclo">
+    <h2>Ciclo 1</h2>
+    <button onclick="mostrarDetalle('curso1')">Redacción Académica</button>
+    <button onclick="mostrarDetalle('curso2')">Comunicación Oral</button>
+  </div>
+
+  <div id="detalleCurso" class="modal oculto">
+    <div class="contenido">
+      <span onclick="cerrarModal()">✖</span>
+      <h3 id="tituloCurso"></h3>
+      <p id="descripcionCurso"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
