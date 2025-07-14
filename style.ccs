@@ -1,61 +1,6 @@
-body {
-  font-family: sans-serif;
-  background: #f0f4ff;
-  padding: 20px;
-}
-
-h1 {
-  color: #2d3436;
-}
-
-.ciclo {
-  margin-bottom: 30px;
-}
-
-button {
-  margin: 5px;
-  padding: 10px 20px;
-  background-color: #74b9ff;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: #0984e3;
-}
-
 button.tachado {
-  text-decoration: line-through;
   background-color: #b2bec3;
-}
-
-.modal {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.oculto {
-  display: none;
-}
-
-.contenido {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-}
-
-.contenido span {
-  float: right;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
+  color: #2d3436;
+  text-decoration: line-through;
+  font-style: italic;
 }
